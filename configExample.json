@@ -1,0 +1,7 @@
+{
+  "clientid": "aaa",
+  "clientsecret": "bbb",
+  "token": "cccc",
+  "destination": "notes/WorkFlowy.md",
+  "dropboxpath": "Apps/WorkFlowy/WorkFlowy (user@example.com).txt"
+}
