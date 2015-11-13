@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 
 	"github.com/stacktic/dropbox"
@@ -37,5 +38,9 @@ func main() {
 
 	// 3. Provide the user token.
 	db.SetAccessToken(c.Token)
-	db.DownloadToFile(c.DropboxPath, c.Destination, "")
+	fmt.Println(c.DropboxPath)
+	err = db.DownloadToFile(c.DropboxPath, c.Destination, "")
+	if err != nil {
+		panic(err)
+	}
 }
